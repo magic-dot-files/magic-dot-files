@@ -58,6 +58,9 @@
 [submodule ".vim/unbundle/programming/tagbar"]
 	path = .vim/unbundle/programming/tagbar
 	url = git://github.com/majutsushi/tagbar.git
+[submodule ".vim/unbundle/programming/vim-fugitive"]
+	path = .vim/unbundle/programming/vim-fugitive
+	url = git://github.com/tpope/vim-fugitive.git
 [submodule ".vim/unbundle/general/sudo.vim"]
 	path = .vim/unbundle/general/sudo.vim
 	url = git://github.com/vim-scripts/sudo.vim.git
