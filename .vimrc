@@ -159,7 +159,6 @@
         " Broken down into easily includeable segments
         set statusline=%<%f\                        " Filename
         set statusline+=%w%h%m%r                    " Options
-        set statusline+=%{fugitive#statusline()}    " Git Hotness
         set statusline+=\ [%{&ff}/%Y]               " filetype
         set statusline+=\ [%{getcwd()}]             " current dir
         set statusline+=%=%-14.(%l,%c%V%)\ %p%%     " Right aligned file nav info
@@ -410,15 +409,6 @@
             let g:pymode = 1
         endif
     " }
-
-    " Fugitive {
-        nnoremap <silent> <leader>gs :Gstatus<CR>
-        nnoremap <silent> <leader>gd :Gdiff<CR>
-        nnoremap <silent> <leader>gc :Gcommit<CR>
-        nnoremap <silent> <leader>gb :Gblame<CR>
-        nnoremap <silent> <leader>gl :Glog<CR>
-        nnoremap <silent> <leader>gp :Git push<CR>
-    "}
 
     " neocomplcache {
         " Disable AutoComplPop.
