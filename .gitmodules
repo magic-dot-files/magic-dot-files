@@ -91,3 +91,6 @@
 [submodule ".vim/unbundle/general/restore_view.vim"]
 	path = .vim/unbundle/general/restore_view.vim
 	url = git://github.com/vim-scripts/restore_view.vim.git
+[submodule ".vim/ftbundle/java/android-javacomplete"]
+	path = .vim/ftbundle/java/android-javacomplete
+	url = git://github.com/tlvince/android-javacomplete.git
