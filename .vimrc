@@ -64,6 +64,9 @@
             NeoBundle 'scrooloose/syntastic'
             NeoBundle 'godlygeek/tabular'
             NeoBundle 'majutsushi/tagbar'
+            NeoBundle 'nathanaelkane/vim-indent-guides'
+
+            " from bitbucket
             NeoBundle 'bb:abudden/taghighlight'
 
             " from vim-scripts
