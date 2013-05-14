@@ -331,6 +331,9 @@
         let NERDTreeQuitOnOpen=1
         let NERDTreeShowHidden=1
         let NERDTreeKeepTreeInNewTab=1
+
+        " open a NERDTree automatically when vim starts up if no files were specified
+        autocmd vimenter * if !argc() | NERDTree | endif
     " }
 
     " Tabularize {
