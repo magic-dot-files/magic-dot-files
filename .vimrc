@@ -17,10 +17,111 @@
     set vb t_vb=                " disable the fcking beep
     "set visualbell             " visual bell instead of beeping
 
+    if has('vim_starting')
+        set runtimepath+=~/.vim/bundle/neobundle.vim/
+    endif
 
-    runtime unbundle/vim-unbundle/unbundle.vim
-    call Unbundle('unbundle/general/*')
-    call Unbundle('unbundle/programming/*')
+    call neobundle#rc(expand('~/.vim/bundle/'))
+
+    " Bundles {
+
+        " Let NeoBundle manage NeoBundle
+        NeoBundleFetch 'Shougo/neobundle.vim'
+
+        " General {
+            " from github
+            NeoBundle 'Shougo/vimproc', {
+                  \ 'build' : {
+                  \     'windows' : 'make -f make_mingw32.mak',
+                  \     'cygwin' : 'make -f make_cygwin.mak',
+                  \     'mac' : 'make -f make_mac.mak',
+                  \     'unix' : 'make -f make_unix.mak',
+                  \    },
+                  \ }
+            NeoBundle 'Shougo/neocomplcache'
+            NeoBundle 'Shougo/vimshell.vim'
+            NeoBundle 'kien/ctrlp.vim'
+            NeoBundle 'ciaranm/detectindent'
+            NeoBundle 'scrooloose/nerdtree'
+            NeoBundle 'mbbill/undotree'
+            NeoBundle 'jistr/vim-nerdtree-tabs'
+            NeoBundle 'tpope/vim-fugitive'
+            NeoBundle 'Lokaltog/vim-powerline', 'develop'
+            NeoBundle 'tpope/vim-repeat'
+            NeoBundle 'tpope/vim-surround'
+
+            " from vim-scripts
+            NeoBundle 'matchit.zip'
+            NeoBundle 'RelOps'
+            NeoBundle 'restore_view.vim'
+            NeoBundle 'sessionman.vim'
+            NeoBundle 'ZoomWin'
+        " }
+
+        " Programming {
+            " from github
+            NeoBundle 'scrooloose/nerdcommenter'
+            NeoBundle 'scrooloose/syntastic'
+            NeoBundle 'godlygeek/tabular'
+            NeoBundle 'majutsushi/tagbar'
+            NeoBundle 'bb:abudden/taghighlight'
+
+            " from vim-scripts
+            NeoBundle 'a.vim'
+            NeoBundle 'DoxygenToolkit.vim'
+        " }
+
+        " FileType {
+            " bindzone {
+                NeoBundleLazy 'seveas/bind.vim', {
+                    \   'autoload' : {
+                    \       'filetypes' : ['zone'],
+                    \       },
+                    \   }
+            " }
+
+            " c {
+                NeoBundleLazy 'Rip-Rip/clang_complete', {
+                    \   'autoload' : {
+                    \       'filetypes' : ['c', 'cpp'],
+                    \       },
+                    \   }
+            " }
+
+            " java {
+                NeoBundleLazy 'javacomplete', {
+                    \   'autoload' : {
+                    \       'filetypes' : ['java'],
+                    \       },
+                    \   }
+
+                NeoBundleLazy 'tlvince/android-javacomplete', {
+                    \   'autoload' : {
+                    \       'filetypes' : ['java'],
+                    \       },
+                    \   }
+            " }
+
+            " json {
+                NeoBundleLazy 'leshill/vim-json', {
+                    \   'autoload' : {
+                    \       'filetypes' : ['json'],
+                    \       },
+                    \   }
+            " }
+
+            " markdown {
+                NeoBundleLazy 'tpope/vim-markdown', {
+                    \   'autoload' : {
+                    \       'filetypes' : ['markdown', 'md', 'mdown', 'mkd', 'mkdn'],
+                    \       },
+                    \   }
+            " }
+        " }
+
+        " Installation check.
+         NeoBundleCheck
+    " }
 
     set shortmess+=filmnrxoOtT                              " abbrev. of messages (avoids 'hit enter')
     set viewoptions=folds,options,cursor,unix,slash         " better unix / windows compatibility
@@ -63,7 +164,6 @@
 
     " When vimrc is edited, reload it
     autocmd! BufWritePost vimrc source ~/.vimrc
-
 
     " Stupid shift key fixes
     if has("user_commands")

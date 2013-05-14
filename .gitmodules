@@ -1,96 +1,9 @@
-[submodule ".vim/ftbundle/c/clang_complete"]
-	path = .vim/ftbundle/c/clang_complete
-	url = git://github.com/Rip-Rip/clang_complete.git
-[submodule ".vim/unbundle/general/ctrlp.vim"]
-	path = .vim/unbundle/general/ctrlp.vim
-	url = git://github.com/kien/ctrlp.vim.git
-[submodule ".vim/unbundle/general/detectindent"]
-	path = .vim/unbundle/general/detectindent
-	url = git://github.com/ciaranm/detectindent.git
-[submodule ".vim/unbundle/general/matchit.zip"]
-	path = .vim/unbundle/general/matchit.zip
-	url = git://github.com/vim-scripts/matchit.zip.git
-[submodule ".vim/unbundle/general/nerdtree"]
-	path = .vim/unbundle/general/nerdtree
-	url = git://github.com/scrooloose/nerdtree.git
-[submodule ".vim/unbundle/general/RelOps"]
-	path = .vim/unbundle/general/RelOps
-	url = git://github.com/vim-scripts/RelOps.git
-[submodule ".vim/unbundle/general/sessionman.vim"]
-	path = .vim/unbundle/general/sessionman.vim
-	url = git://github.com/vim-scripts/sessionman.vim.git
-[submodule ".vim/unbundle/general/undotree"]
-	path = .vim/unbundle/general/undotree
-	url = git://github.com/mbbill/undotree.git
-[submodule ".vim/unbundle/general/vim-nerdtree-tabs"]
-	path = .vim/unbundle/general/vim-nerdtree-tabs
-	url = git://github.com/jistr/vim-nerdtree-tabs.git
-[submodule ".vim/unbundle/general/vim-repeat"]
-	path = .vim/unbundle/general/vim-repeat
-	url = git://github.com/tpope/vim-repeat.git
-[submodule ".vim/unbundle/general/vim-surround"]
-	path = .vim/unbundle/general/vim-surround
-	url = git://github.com/tpope/vim-surround.git
-[submodule ".vim/ftbundle/javascript/vim-json"]
-	path = .vim/ftbundle/javascript/vim-json
-	url = git://github.com/leshill/vim-json.git
-[submodule ".vim/ftbundle/markdown/vim-markdown"]
-	path = .vim/ftbundle/markdown/vim-markdown
-	url = git://github.com/tpope/vim-markdown.git
-[submodule ".vim/unbundle/programming/a.vim"]
-	path = .vim/unbundle/programming/a.vim
-	url = git://github.com/vim-scripts/a.vim.git
-[submodule ".vim/unbundle/programming/DoxygenToolkit.vim"]
-	path = .vim/unbundle/programming/DoxygenToolkit.vim
-	url = git://github.com/vim-scripts/DoxygenToolkit.vim.git
-[submodule ".vim/unbundle/programming/neocomplcache"]
-	path = .vim/unbundle/programming/neocomplcache
-	url = git://github.com/Shougo/neocomplcache.git
-[submodule ".vim/unbundle/programming/nerdcommenter"]
-	path = .vim/unbundle/programming/nerdcommenter
-	url = git://github.com/scrooloose/nerdcommenter.git
-[submodule ".vim/unbundle/programming/syntastic"]
-	path = .vim/unbundle/programming/syntastic
-	url = git://github.com/scrooloose/syntastic.git
-[submodule ".vim/unbundle/programming/tabular"]
-	path = .vim/unbundle/programming/tabular
-	url = git://github.com/godlygeek/tabular.git
-[submodule ".vim/unbundle/programming/tagbar"]
-	path = .vim/unbundle/programming/tagbar
-	url = git://github.com/majutsushi/tagbar.git
-[submodule ".vim/unbundle/programming/vim-fugitive"]
-	path = .vim/unbundle/programming/vim-fugitive
-	url = git://github.com/tpope/vim-fugitive.git
-[submodule ".vim/unbundle/general/sudo.vim"]
-	path = .vim/unbundle/general/sudo.vim
-	url = git://github.com/vim-scripts/sudo.vim.git
-[submodule ".vim/ftbundle/bindzone/bind.vim"]
-	path = .vim/ftbundle/bindzone/bind.vim
-	url = git://github.com/seveas/bind.vim.git
-[submodule ".vim/ftbundle/java/javacomplete"]
-	path = .vim/ftbundle/java/javacomplete
-	url = git://github.com/vim-scripts/javacomplete.git
-[submodule ".vim/unbundle/general/ZoomWin"]
-	path = .vim/unbundle/general/ZoomWin
-	url = git://github.com/vim-scripts/ZoomWin.git
 [submodule ".tmux/tmux-powerline.git"]
 	path = .tmux/tmux-powerline.git
 	url = git://github.com/erikw/tmux-powerline.git
 [submodule ".tmux/tmux-colors-solarized.git"]
 	path = .tmux/tmux-colors-solarized.git
 	url = git://github.com/seebi/tmux-colors-solarized.git
-[submodule ".vim/unbundle/general/vim-powerline"]
-	path = .vim/unbundle/general/vim-powerline
-	url = git://github.com/Lokaltog/vim-powerline.git
-[submodule ".vim/unbundle/vim-unbundle"]
-	path = .vim/unbundle/vim-unbundle
-	url = git://github.com/sunaku/vim-unbundle.git
-[submodule ".vim/unbundle/programming/TagHighlight"]
-	path = .vim/unbundle/programming/TagHighlight
-	url = git://github.com/magic-dot-files/TagHighlight.git
-[submodule ".vim/unbundle/general/restore_view.vim"]
-	path = .vim/unbundle/general/restore_view.vim
-	url = git://github.com/vim-scripts/restore_view.vim.git
-[submodule ".vim/ftbundle/java/android-javacomplete"]
-	path = .vim/ftbundle/java/android-javacomplete
-	url = git://github.com/tlvince/android-javacomplete.git
+[submodule ".vim/bundle/neobundle.vim"]
+	path = .vim/bundle/neobundle.vim
+	url = git://github.com/Shougo/neobundle.vim.git
