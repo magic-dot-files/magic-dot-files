@@ -5,10 +5,6 @@ sudo apt-get install vim-gtk clang exuberant-ctags git python-fontforge unzip
 git submodule update --init
 git submodule foreach git checkout master
 
-pushd .vim/unbundle/general/vim-powerline
-git checkout develop
-popd
-
 for file in `ls -A -I .git -I .gitmodules -I setup.sh -I .kde`;
 do
 	echo $PWD/$file
@@ -26,6 +22,8 @@ do
 
 	ln -sf $PWD/$file $HOME
 done
+
+vim +NeoBundleInstall +q
 
 ls $HOME/.fonts/Ubuntu*-Powerline.ttf > /dev/null
 
