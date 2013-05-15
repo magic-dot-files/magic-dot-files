@@ -626,6 +626,21 @@
         let g:clang_use_library   = 0
     " }
 
+    " javacomplete {
+        if glob('AndroidManifest.xml') =~ ''
+            if filereadable('project.properties')
+                let s:androidSdkPath = '/opt/android-sdk-linux'
+                " the following line uses external tools and is less portable
+                "let s:androidTargetPlatform = system('grep target= project.properties | cut -d \= -f 2')
+                vimgrep /target=/j project.properties
+                let s:androidTargetPlatform = split(getqflist()[0].text, '=')[1]
+                let s:targetAndroidJar = s:androidSdkPath . '/platforms/' . s:androidTargetPlatform . '/android.jar'
+
+                call javacomplete#SetClassPath(s:targetAndroidJar . ':libs/android-support-v4.jar:bin/classes')
+            end
+        endif
+    " }
+
     " clang_complete {
         let g:clang_snippets = 1
         let g:clang_snippets_engine = 'clang_complete'
