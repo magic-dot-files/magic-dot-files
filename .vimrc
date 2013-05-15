@@ -97,12 +97,6 @@
                     \       'filetypes' : ['java'],
                     \       },
                     \   }
-
-                NeoBundleLazy 'tlvince/android-javacomplete', {
-                    \   'autoload' : {
-                    \       'filetypes' : ['java'],
-                    \       },
-                    \   }
             " }
 
             " json {
