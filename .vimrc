@@ -428,6 +428,10 @@
         let NERDTreeQuitOnOpen=1
         let NERDTreeShowHidden=1
         let NERDTreeKeepTreeInNewTab=1
+    " }
+
+    " NERDTreeTabs {
+        map <Leader>n <plug>NERDTreeTabsToggle<CR>
 
         " open a NERDTree automatically when vim starts up if no files were specified
         autocmd vimenter * if !argc() | NERDTree | endif
