@@ -65,6 +65,7 @@
             NeoBundle 'godlygeek/tabular'
             NeoBundle 'majutsushi/tagbar'
             NeoBundle 'nathanaelkane/vim-indent-guides'
+            NeoBundle 'terryma/vim-multiple-cursors'
 
             " from bitbucket
             NeoBundle 'bb:abudden/taghighlight'
