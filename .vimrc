@@ -38,7 +38,11 @@
                   \     'unix' : 'make -f make_unix.mak',
                   \    },
                   \ }
-            NeoBundle 'Shougo/neocomplcache'
+            NeoBundle 'Shougo/neocomplcache', {'depends' :
+                  \ [ 'Shougo/neosnippet.git',
+                  \   ['rstacruz/sparkup', {'rtp': 'vim'}],
+                  \ ]}
+
             NeoBundle 'Shougo/vimshell.vim'
             NeoBundle 'kien/ctrlp.vim'
             NeoBundle 'ciaranm/detectindent'
