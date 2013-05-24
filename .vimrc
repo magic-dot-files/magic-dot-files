@@ -101,7 +101,7 @@
             " }
 
             " json {
-                NeoBundleLazy 'leshill/vim-json', {
+                NeoBundleLazy 'elzr/vim-json', {
                     \   'autoload' : {
                     \       'filetypes' : ['json'],
                     \       },
