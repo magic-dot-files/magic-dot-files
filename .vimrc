@@ -53,12 +53,13 @@
             NeoBundle 'Lokaltog/vim-powerline', 'develop'
             NeoBundle 'tpope/vim-repeat'
             NeoBundle 'tpope/vim-surround'
+            NeoBundle 'xolox/vim-session', {'depends' :
+                \ [ 'xolox/vim-misc', ]}
 
             " from vim-scripts
             NeoBundle 'matchit.zip'
             NeoBundle 'RelOps'
             NeoBundle 'restore_view.vim'
-            NeoBundle 'sessionman.vim'
             NeoBundle 'ZoomWin'
         " }
 
