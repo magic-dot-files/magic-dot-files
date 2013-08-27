@@ -36,11 +36,11 @@ if [ $? -ne 0  ]; then
 
 	pushd ~/tmp/ubuntu-font-family-0.80
 
-	chmod +x ~/.vim/unbundle/general/vim-powerline/fontpatcher/fontpatcher
+	chmod +x ~/.vim/bundle/vim-powerline_develop/fontpatcher/fontpatcher
 
 	for f in `ls *.ttf`;
 	do
-		~/.vim/unbundle/general/vim-powerline/fontpatcher/fontpatcher $f
+		~/.vim/bundle/vim-powerline_develop/fontpatcher/fontpatcher $f
 	done
 
 	fonts=`ls *Powerline.ttf`
