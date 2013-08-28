@@ -71,6 +71,7 @@
             NeoBundle 'majutsushi/tagbar'
             NeoBundle 'nathanaelkane/vim-indent-guides'
             NeoBundle 'terryma/vim-multiple-cursors'
+            NeoBundle 'ciaranm/detectindent'
 
             " from bitbucket
             NeoBundle 'bb:abudden/taghighlight'
