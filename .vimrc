@@ -50,7 +50,7 @@
             NeoBundle 'mbbill/undotree'
             NeoBundle 'jistr/vim-nerdtree-tabs'
             NeoBundle 'tpope/vim-fugitive'
-            NeoBundle 'Lokaltog/vim-powerline', 'develop'
+            NeoBundle 'bling/vim-airline'
             NeoBundle 'tpope/vim-repeat'
             NeoBundle 'tpope/vim-surround'
             NeoBundle 'xolox/vim-session', {'depends' :
@@ -218,7 +218,7 @@
     set showmatch                       " Show matching bracets when text indicator is over them
 
     " enable powerline patched fonts
-    let g:Powerline_symbols = 'fancy'
+    let g:airline_powerline_fonts = 1
 
     if has('cmdline_info')
         set ruler                       " show the cursor position all the time
@@ -259,16 +259,6 @@
 
     if has('statusline')
         set laststatus=2
-        "set statusline=[%{&ff}]\ [%Y]\ [pos:%04l,%04v][%p%%]\ [len:%L]\ %<%F%m%r%h%w
-
-        " Broken down into easily includeable segments
-        set statusline=%<%f\                        " Filename
-        set statusline+=%w%h%m%r                    " Options
-        set statusline+=%{fugitive#statusline()}    " Git Hotness
-        set statusline+=\ [%{&ff}/%Y]               " filetype
-        set statusline+=\ [%{getcwd()}]             " current dir
-        set statusline+=%=%-14.(%l,%c%V%)\ %p%%     " Right aligned file nav info
-
     endif
 
     " from http://vim.wikia.com/wiki/Highlight_unwanted_spaces
