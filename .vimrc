@@ -203,9 +203,10 @@
 " Appearance {
     set background=dark
 
-    highlight Pmenu guifg=#000000 guibg=#F8F8F8 ctermfg=black ctermbg=Lightgray
-    highlight PmenuSbar guifg=#8A95A7 guibg=#F8F8F8 gui=NONE ctermfg=darkcyan ctermbg=lightgray cterm=NONE
-    highlight PmenuThumb guifg=#F8F8F8 guibg=#8A95A7 gui=NONE ctermfg=lightgray ctermbg=darkcyan cterm=NONE
+    highlight Pmenu ctermfg=black ctermbg=lightgray
+    highlight PmenuSel ctermfg=white ctermbg=darkgray
+    highlight PmenuSbar ctermfg=lightcyan ctermbg=lightcyan
+    highlight PmenuThumb ctermfg=lightgray ctermbg=darkgray
 
     if has("gui_running")
         colorscheme evening
