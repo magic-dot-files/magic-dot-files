@@ -1,9 +1,6 @@
-[submodule ".tmux/tmux-powerline.git"]
-	path = .tmux/tmux-powerline.git
-	url = git://github.com/erikw/tmux-powerline.git
-[submodule ".tmux/tmux-colors-solarized.git"]
-	path = .tmux/tmux-colors-solarized.git
-	url = git://github.com/seebi/tmux-colors-solarized.git
 [submodule ".vim/bundle/neobundle.vim"]
 	path = .vim/bundle/neobundle.vim
 	url = git://github.com/Shougo/neobundle.vim.git
+[submodule ".powerline"]
+	path = .powerline
+	url = https://github.com/Lokaltog/powerline
