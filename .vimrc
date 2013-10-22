@@ -55,12 +55,12 @@
             NeoBundle 'tpope/vim-surround'
             NeoBundle 'xolox/vim-session', {'depends' :
                 \ [ 'xolox/vim-misc', ]}
+            NeoBundle 'regedarek/ZoomWin'
 
             " from vim-scripts
             NeoBundle 'matchit.zip'
             NeoBundle 'RelOps'
             NeoBundle 'restore_view.vim'
-            NeoBundle 'ZoomWin'
         " }
 
         " Programming {
