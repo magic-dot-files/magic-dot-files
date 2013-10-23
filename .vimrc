@@ -72,6 +72,7 @@
             NeoBundle 'nathanaelkane/vim-indent-guides'
             NeoBundle 'terryma/vim-multiple-cursors'
             NeoBundle 'ciaranm/detectindent'
+            NeoBundle 'airblade/vim-gitgutter.git'
 
             " from bitbucket
             NeoBundle 'bb:abudden/taghighlight'
@@ -224,6 +225,12 @@
     endif
 
     set cursorline                      " Highlighting that moves with the cursor
+
+    highlight clear SignColumn          " SignColumn should match background for
+                                        " things like vim-gitgutter
+
+    highlight clear LineNr              " Current line number row will have same background color in relative mode.
+                                        " Things like vim-gitgutter will match LineNr highlight
 
     set splitright
 
