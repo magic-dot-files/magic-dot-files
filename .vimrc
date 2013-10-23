@@ -225,6 +225,7 @@
     endif
 
     set cursorline                      " Highlighting that moves with the cursor
+    highlight CursorLine term=bold cterm=bold guibg=Grey40
 
     highlight clear SignColumn          " SignColumn should match background for
                                         " things like vim-gitgutter
