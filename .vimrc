@@ -206,6 +206,10 @@
     highlight PmenuSbar ctermfg=lightcyan ctermbg=lightcyan
     highlight PmenuThumb ctermfg=lightgray ctermbg=darkgray
 
+    " Change the behavior of the <Enter> key when the popup menu is visible.
+    " The Enter key will simply select the highlighted menu item, just as <C-Y> does.
+    inoremap <expr> <CR> pumvisible() ? "\<C-y>" : "\<C-g>u\<CR>"
+
     if has("gui_running")
         colorscheme evening
     endif
