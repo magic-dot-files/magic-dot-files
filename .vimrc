@@ -217,9 +217,6 @@
     set showmode                        " Show editing mode
     set showmatch                       " Show matching bracets when text indicator is over them
 
-    " enable powerline patched fonts
-    let g:airline_powerline_fonts = 1
-
     if has('cmdline_info')
         set ruler                       " show the cursor position all the time
         set rulerformat=%30(%=\:b%n%y%m%r%w\ %l,%c%V\ %P%) " a ruler on steroids"
@@ -644,6 +641,17 @@
 
     " UndoTree {
         nnoremap <c-u> :UndotreeToggle<CR>
+    " }
+
+    " vim-airline {
+        let g:airline_powerline_fonts = 1
+
+        let g:airline_theme = 'powerlineish'
+        if !exists('g:airline_powerline_fonts')
+            " Use the default set of separators with a few customizations
+            let g:airline_left_sep='›' " Slightly fancier than '>'
+            let g:airline_right_sep='‹' " Slightly fancier than '<'
+        endif
     " }
 " }
 
