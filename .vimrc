@@ -115,6 +115,14 @@
                     \   }
             " }
 
+            " javascript {
+                NeoBundleLazy 'marijnh/tern_for_vim', {
+                    \   'autoload' : {
+                    \       'filetypes' : ['javascript', 'json'],
+                    \       },
+                    \   }
+            " }
+
             " markdown {
                 NeoBundleLazy 'tpope/vim-markdown', {
                     \   'autoload' : {
