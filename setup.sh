@@ -1,6 +1,6 @@
 #!/bin/bash
 
-sudo apt-get install vim-gtk clang exuberant-ctags git python-fontforge unzip mercurial libclang-dev nodejs npm
+sudo apt-get install vim-gtk clang exuberant-ctags git python-fontforge unzip mercurial libclang-dev nodejs npm cmake
 
 git submodule update --init
 git submodule foreach git checkout master
