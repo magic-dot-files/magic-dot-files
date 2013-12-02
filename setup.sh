@@ -48,7 +48,7 @@ if [ $? -ne 0  ]; then
 		~/.powerline/font/fontpatcher.py $f
 	done
 
-	fonts=`ls *Powerline.ttf`
+	fonts=`ls *Powerline*.ttf`
 
 	if [ $? -eq 0 ]; then
 		mkdir -p $HOME/.fonts
