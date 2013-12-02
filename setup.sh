@@ -30,7 +30,7 @@ done
 
 vim +NeoBundleInstall +q
 
-ls $HOME/.fonts/Ubuntu*-Powerline.ttf > /dev/null
+ls $HOME/.fonts/Ubuntu*-Powerline*.ttf > /dev/null
 
 if [ $? -ne 0  ]; then
 
@@ -43,7 +43,7 @@ if [ $? -ne 0  ]; then
 
 	chmod +x ~/.powerline/font/fontpatcher.py
 
-	for f in `ls *.ttf`;
+	for f in *.ttf;
 	do
 		~/.powerline/font/fontpatcher.py $f
 	done
@@ -52,7 +52,9 @@ if [ $? -ne 0  ]; then
 
 	if [ $? -eq 0 ]; then
 		mkdir -p $HOME/.fonts
-		cp $fonts $HOME/.fonts
+		for f in *Powerline*.ttf; do
+			cp "$f" $HOME/.fonts
+		done
 		sudo fc-cache -vf
 	fi
 
