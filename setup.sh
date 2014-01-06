@@ -30,6 +30,11 @@ done
 
 vim +NeoBundleInstall +q
 
+pushd .vim/bundle/YouCompleteMe
+git submodule update --init --recursive
+./install.sh --clang-completer
+popd
+
 ls $HOME/.fonts/Ubuntu*-Powerline*.ttf > /dev/null
 
 if [ $? -ne 0  ]; then
