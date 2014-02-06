@@ -35,6 +35,11 @@ git submodule update --init --recursive
 ./install.sh --clang-completer
 popd
 
+if [[ -x `which tic` ]]; then
+	mkdir -p $HOME/.terminfo
+	tic ./screen-256color.terminfo
+fi
+
 ls $HOME/.fonts/Ubuntu*-Powerline*.ttf > /dev/null
 
 if [ $? -ne 0  ]; then
