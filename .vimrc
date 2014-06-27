@@ -178,6 +178,9 @@
         command! -bang Q q<bang>
         command! -bang QA qa<bang>
         command! -bang Qa qa<bang>
+        command! -bang Qal qa<bang>
+        command! -bang Qall qa<bang>
+        command! -bang QALL qa<bang>
     endif
     cmap Tabe tabe
 
