@@ -1,6 +1,6 @@
 #!/bin/bash
 
-sudo apt-get install vim-gtk clang exuberant-ctags git python-fontforge unzip mercurial libclang-dev nodejs npm cmake python-dev
+sudo apt-get install vim-gtk clang exuberant-ctags git python-fontforge unzip mercurial libclang-dev nodejs npm cmake python-dev python-git python-psutil
 
 git submodule update --init
 git submodule foreach git checkout master
@@ -51,11 +51,11 @@ if [ $? -ne 0  ]; then
 
 	pushd ~/tmp/ubuntu-font-family-0.80
 
-	chmod +x ~/.powerline/font/fontpatcher.py
+	chmod +x ~/.powerline-fontpatcher/scripts/powerline-fontpatcher
 
 	for f in *.ttf;
 	do
-		~/.powerline/font/fontpatcher.py $f
+		~/.powerline-fontpatcher/scripts/powerline-fontpatcher $f
 	done
 
 	fonts=`ls *Powerline*.ttf`
