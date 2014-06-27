@@ -10,7 +10,7 @@ git checkout develop
 
 popd
 
-for file in `ls -A -I .git -I .gitmodules -I setup.sh -I .kde`;
+for file in `ls -A -I .git -I .gitmodules -I setup.sh -I .kde -I screen-256color.terminfo`;
 do
 	echo $PWD/$file
 
