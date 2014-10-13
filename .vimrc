@@ -17,11 +17,14 @@
     set vb t_vb=                " disable the fcking beep
     "set visualbell             " visual bell instead of beeping
 
+    " Skip initialization for vim-tiny or vim-small.
+    if !1 | finish | endif
+
     if has('vim_starting')
         set runtimepath+=~/.vim/bundle/neobundle.vim/
     endif
 
-    call neobundle#rc(expand('~/.vim/bundle/'))
+    call neobundle#begin(expand('~/.vim/bundle/'))
 
     " Bundles {
 
@@ -121,8 +124,9 @@
             " }
         " }
 
+        call neobundle#end()
         " Installation check.
-         NeoBundleCheck
+        NeoBundleCheck
     " }
 
     set shortmess+=filmnrxoOtT                              " abbrev. of messages (avoids 'hit enter')
