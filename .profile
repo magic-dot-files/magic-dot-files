@@ -36,3 +36,7 @@ fi
 if [ -d "/opt/android-sdk-linux" ] ; then
     PATH="/opt/android-sdk-linux/platform-tools:/opt/android-sdk-linux/tools:$PATH"
 fi
+
+if [ -d "$HOME/.powerline/scripts" ] ; then
+    PATH="$HOME/.powerline/scripts:$PATH"
+fi
