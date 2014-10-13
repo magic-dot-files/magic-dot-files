@@ -7,8 +7,8 @@ git submodule foreach git checkout master
 
 pushd .powerline
 git checkout develop
-
 popd
+git submodule foreach git pull --rebase
 
 for file in `ls -A -I .git -I .gitmodules -I setup.sh -I .kde -I screen-256color.terminfo`;
 do
