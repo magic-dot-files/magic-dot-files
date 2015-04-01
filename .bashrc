@@ -76,7 +76,8 @@ xterm*|rxvt*)
     ;;
 esac
 
-PS1="$PS1"'$([ -n "$TMUX" ] && tmux setenv TMUXPWD_$(tmux display -p "#D" | tr -d %) "$PWD")'
+PS1="$([ -n "$TMUX" ] && tmux setenv TMUXPWD_$(tmux display -p '#I') $PWD)$PS1"
+
 
 # enable color support of ls and also add handy aliases
 if [ -x /usr/bin/dircolors ]; then
