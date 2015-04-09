@@ -195,6 +195,12 @@
     vnoremap < <gv
     vnoremap > >gv
 
+    " simplify resizing splits
+    nnoremap - <C-w>-
+    nnoremap + <C-w>+
+    nnoremap < <C-w><
+    nnoremap > <C-w>>
+
     if g:mdf_disable_arrow_keys
         " You want to be part of the gurus? Time to get in serious stuff and stop using
         " arrow keys.
