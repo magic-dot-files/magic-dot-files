@@ -7,6 +7,9 @@
     " This must be first, because it changes other options as a side effect.
     set nocompatible
 
+   if has('nvim')
+       let $NVIM_TUI_ENABLE_TRUE_COLOR=1
+   endif
 
     let g:mdf_disable_arrow_keys = 0
     let g:mdf_space_instead_of_tab = 1
@@ -300,7 +303,7 @@
             endif
         else
             " Set term to xterm to make <Home> and <End> keys work properly
-            if match($TERM, "screen*") != -1 || match($TERM, "xterm*") != -1
+            if (!has('nvim') && (match($TERM, "screen*") != -1 || match($TERM, "xterm*") != -1))
                 set term=xterm-256color
                 set t_Co=256 " Enable 256 colors to stop the CSApprox warning and make xterm vim shine
             endif
