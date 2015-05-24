@@ -12,20 +12,27 @@ git submodule foreach git pull --rebase
 
 for file in `ls -A -I .git -I .gitmodules -I setup.sh -I .kde -I screen-256color.terminfo`;
 do
-	echo $PWD/$file
+	SOURCEFILE=$PWD/$file
+	DESTFILE=$HOME/$file
+	echo $SOURCEFILE
 
-	if [ $PWD/$file == `readlink -f $HOME/$file` ]; then
+	if [ $file == ".config" ]; then
+		SOURCEFILE=$PWD/.config/plasma-workspace
+		DESTFILE=$HOME/.config/plasma-workspace
+	fi
+
+	if [ $SOURCEFILE == `readlink -f $DESTFILE` ]; then
 		echo "skipping..."
 		continue
-	elif [ -e $HOME/$file ]; then
+	elif [ -e $DESTFILE ]; then
 		echo "backuping..."
-		mv $HOME/$file $HOME/$file-backup-`date +%Y%m%d%H%M%S`
+		mv $DESTFILE $DESTFILE-backup-`date +%Y%m%d%H%M%S`
 		echo "replacing..."
 	else
 		echo "linking..."
 	fi
 
-	ln -sf $PWD/$file $HOME
+	ln -sf $SOURCEFILE $DESTFILE
 done
 
 vim +NeoBundleInstall +q
