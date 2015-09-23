@@ -62,7 +62,6 @@
             " from vim-scripts
             NeoBundle 'matchit.zip'
             NeoBundle 'RelOps'
-            NeoBundle 'restore_view.vim'
         " }
 
         " Programming {
