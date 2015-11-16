@@ -35,6 +35,9 @@ do
 	ln -sf $SOURCEFILE $DESTFILE
 done
 
+ln -sf $PWD/.vim $HOME/.config/nvim
+ln -sf $PWD/.vimrc $HOME/.config/nvim/init.vim
+
 vim +NeoBundleInstall +q
 
 pushd .vim/bundle/YouCompleteMe
