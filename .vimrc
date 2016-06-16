@@ -52,7 +52,8 @@
             NeoBundle 'mbbill/undotree'
             NeoBundle 'jistr/vim-nerdtree-tabs'
             NeoBundle 'tpope/vim-fugitive'
-            NeoBundle 'bling/vim-airline'
+            NeoBundle 'vim-airline/vim-airline'
+            NeoBundle 'vim-airline/vim-airline-themes'
             NeoBundle 'tpope/vim-repeat'
             NeoBundle 'tpope/vim-surround'
             NeoBundle 'xolox/vim-session', {'depends' :
