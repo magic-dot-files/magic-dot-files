@@ -122,6 +122,3 @@ export DEBSIGN_KEYID=
 # Quilt default configuration
 export QUILT_PATCHES=debian/patches
 export QUILT_REFRESH_ARGS="-p ab --no-timestamps --no-index"
-
-#Exclude some dirs from Grep results
-export GREP_OPTIONS="-I --exclude-dir=.svn --exclude-dir=.cache"
